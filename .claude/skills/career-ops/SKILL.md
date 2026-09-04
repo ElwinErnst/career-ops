@@ -26,11 +26,14 @@ Determine the mode from `{{mode}}`:
 | `pipeline` | `pipeline` |
 | `apply` | `apply` |
 | `scan` | `scan` |
+| `linkedin` | `linkedin` |
 | `batch` | `batch` |
+
+**Natural-language routing:** If `{{mode}}` contains intent equivalent to importing, syncing, processing, reviewing, or consuming jobs from the LinkedIn monitor (for example: "importá las ofertas de LinkedIn", "procesá lo nuevo del monitor", "sincronizá LinkedIn", "revisá los jobs que encontró LinkedIn"), route to `linkedin` even if the literal sub-command is not present.
 
 **Auto-pipeline detection:** If `{{mode}}` is not a known sub-command AND contains JD text (keywords: "responsibilities", "requirements", "qualifications", "about the role", "we're looking for", company name + role) or a URL to a JD, execute `auto-pipeline`.
 
-If `{{mode}}` is not a sub-command AND doesn't look like a JD, show discovery.
+If `{{mode}}` is not a sub-command AND doesn't match LinkedIn-monitor intent AND doesn't look like a JD, show discovery.
 
 ---
 
@@ -44,6 +47,7 @@ career-ops -- Command Center
 Available commands:
   /career-ops {JD}      → AUTO-PIPELINE: evaluate + report + PDF + tracker (paste text or URL)
   /career-ops pipeline  → Process pending URLs from inbox (data/pipeline.md)
+  /career-ops linkedin  → Import LinkedIn monitor feed + process new jobs
   /career-ops oferta    → Evaluation only A-F (no auto PDF)
   /career-ops ofertas   → Compare and rank multiple offers
   /career-ops contacto  → LinkedIn power move: find contacts + draft message
@@ -55,6 +59,9 @@ Available commands:
   /career-ops apply     → Live application assistant (reads form + generates answers)
   /career-ops scan      → Scan portals and discover new offers
   /career-ops batch     → Batch processing with parallel workers
+
+Natural language also works, for example:
+  /career-ops importá las nuevas ofertas del monitor de LinkedIn
 
 Inbox: add URLs to data/pipeline.md → /career-ops pipeline
 Or paste a JD directly to run the full pipeline.
@@ -69,7 +76,7 @@ After determining the mode, load the necessary files before executing:
 ### Modes that require `_shared.md` + their mode file:
 Read `modes/_shared.md` + `modes/{mode}.md`
 
-Applies to: `auto-pipeline`, `oferta`, `ofertas`, `pdf`, `contacto`, `apply`, `pipeline`, `scan`, `batch`
+Applies to: `auto-pipeline`, `oferta`, `ofertas`, `pdf`, `contacto`, `apply`, `pipeline`, `scan`, `linkedin`, `batch`
 
 ### Standalone modes (only their mode file):
 Read `modes/{mode}.md`
