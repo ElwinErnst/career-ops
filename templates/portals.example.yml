@@ -186,6 +186,140 @@ search_queries:
     query: 'site:remotefront.com "AI Engineer" OR "Solutions Engineer" OR "Automation" OR "LLM" OR "Agent" remote'
     enabled: true
 
+  # -- Additional job boards (from November 2026 portal shortlist) --
+  # These are discovery queries, not tracked companies. URLs are reference landing pages.
+  # Remote opportunities may be geographically restricted; check eligibility before applying.
+  # Hacker News — Who is Hiring — https://news.ycombinator.com/submitted?id=whoishiring
+  - name: 'Hacker News — Who is Hiring — Engineering / Remote'
+    query: 'site:news.ycombinator.com ("Senior Software Engineer" OR "Full Stack" OR "Backend" OR "Frontend" OR "Solutions Architect") (remote OR remoto) (LATAM OR Argentina OR Uruguay)'
+    enabled: true
+
+  # HN Hiring — https://hnhiring.com
+  - name: 'HN Hiring — Engineering / Remote'
+    query: 'site:hnhiring.com ("Senior Software Engineer" OR "Full Stack" OR "Backend" OR "Frontend" OR "Solutions Architect") (remote OR remoto) (LATAM OR Argentina OR Uruguay)'
+    enabled: true
+
+  # We Work Remotely — https://weworkremotely.com
+  - name: 'We Work Remotely — Engineering / Remote'
+    query: 'site:weworkremotely.com ("Senior Software Engineer" OR "Full Stack" OR "Backend" OR "Frontend" OR "Solutions Architect") (remote OR remoto) (LATAM OR Argentina OR Uruguay)'
+    enabled: true
+
+  # Remote OK — https://remoteok.com
+  - name: 'Remote OK — Engineering / Remote'
+    query: 'site:remoteok.com ("Senior Software Engineer" OR "Full Stack" OR "Backend" OR "Frontend" OR "Solutions Architect") (remote OR remoto) (LATAM OR Argentina OR Uruguay)'
+    enabled: true
+
+  # Levels.fyi Jobs — https://www.levels.fyi/jobs
+  - name: 'Levels.fyi Jobs — Engineering / Remote'
+    query: 'site:levels.fyi/jobs ("Senior Software Engineer" OR "Full Stack" OR "Backend" OR "Frontend" OR "Solutions Architect") (remote OR remoto) (LATAM OR Argentina OR Uruguay)'
+    enabled: true
+
+  # Remotive — https://remotive.com/remote-jobs
+  - name: 'Remotive — Engineering / Remote'
+    query: 'site:remotive.com/remote-jobs ("Senior Software Engineer" OR "Full Stack" OR "Backend" OR "Frontend" OR "Solutions Architect") (remote OR remoto) (LATAM OR Argentina OR Uruguay)'
+    enabled: true
+
+  # Work at a Startup (YC) — https://www.ycombinator.com/jobs
+  - name: 'Work at a Startup (YC) — Engineering / Remote'
+    query: 'site:ycombinator.com/jobs ("Senior Software Engineer" OR "Full Stack" OR "Backend" OR "Frontend" OR "Solutions Architect") (remote OR remoto) (LATAM OR Argentina OR Uruguay)'
+    enabled: true
+
+  # Toptal — https://www.toptal.com/freelance-jobs
+  - name: 'Toptal — Engineering / Remote'
+    query: 'site:toptal.com/freelance-jobs ("Senior Software Engineer" OR "Full Stack" OR "Backend" OR "Frontend" OR "Solutions Architect") (remote OR remoto) (LATAM OR Argentina OR Uruguay)'
+    enabled: true
+
+  # Arc.dev — https://arc.dev/remote-jobs
+  - name: 'Arc.dev — Engineering / Remote'
+    query: 'site:arc.dev/remote-jobs ("Senior Software Engineer" OR "Full Stack" OR "Backend" OR "Frontend" OR "Solutions Architect") (remote OR remoto) (LATAM OR Argentina OR Uruguay)'
+    enabled: true
+
+  # Google for Jobs — https://www.google.com/search?q=remote+software+engineer+jobs
+  - name: 'Google for Jobs — Engineering / Remote'
+    query: '"Google for Jobs" ("software engineer" OR developer OR "solutions architect") (remote OR LATAM OR Argentina OR Uruguay)'
+    enabled: true
+
+  # Get on Board — https://www.getonbrd.com/empleos
+  - name: 'Get on Board — Engineering / Remote'
+    query: 'site:getonbrd.com ("Senior Software Engineer" OR "Full Stack" OR "Backend" OR "Frontend" OR "Solutions Architect") (remote OR remoto) (LATAM OR Argentina OR Uruguay)'
+    enabled: true
+
+  # Lemon.io — https://lemon.io/for-developers/
+  - name: 'Lemon.io — Engineering / Remote'
+    query: 'site:lemon.io/for-developers ("Senior Software Engineer" OR "Full Stack" OR "Backend" OR "Frontend" OR "Solutions Architect") (remote OR remoto) (LATAM OR Argentina OR Uruguay)'
+    enabled: true
+
+  # Indeed — https://www.indeed.com
+  - name: 'Indeed — Engineering / Remote'
+    query: 'site:indeed.com ("Senior Software Engineer" OR "Full Stack" OR "Backend" OR "Frontend" OR "Solutions Architect") (remote OR remoto) (LATAM OR Argentina OR Uruguay)'
+    enabled: true
+
+  # Welcome to the Jungle — https://www.welcometothejungle.com
+  - name: 'Welcome to the Jungle — Engineering / Remote'
+    query: 'site:welcometothejungle.com ("Senior Software Engineer" OR "Full Stack" OR "Backend" OR "Frontend" OR "Solutions Architect") (remote OR remoto) (LATAM OR Argentina OR Uruguay)'
+    enabled: true
+
+  # Himalayas — https://himalayas.app/jobs
+  - name: 'Himalayas — Engineering / Remote'
+    query: 'site:himalayas.app/jobs ("Senior Software Engineer" OR "Full Stack" OR "Backend" OR "Frontend" OR "Solutions Architect") (remote OR remoto) (LATAM OR Argentina OR Uruguay)'
+    enabled: true
+
+  # Built In — https://builtin.com/jobs
+  - name: 'Built In — Engineering / Remote'
+    query: 'site:builtin.com/jobs ("Senior Software Engineer" OR "Full Stack" OR "Backend" OR "Frontend" OR "Solutions Architect") (remote OR remoto) (LATAM OR Argentina OR Uruguay)'
+    enabled: true
+
+  # FlexJobs — https://www.flexjobs.com
+  - name: 'FlexJobs — Engineering / Remote'
+    query: 'site:flexjobs.com ("Senior Software Engineer" OR "Full Stack" OR "Backend" OR "Frontend" OR "Solutions Architect") (remote OR remoto) (LATAM OR Argentina OR Uruguay)'
+    enabled: true
+
+  # Web3 Career — https://web3.career
+  - name: 'Web3 Career — Engineering / Remote'
+    query: 'site:web3.career ("Senior Software Engineer" OR "Full Stack" OR "Backend" OR "Frontend" OR "Solutions Architect") (remote OR remoto) (LATAM OR Argentina OR Uruguay)'
+    enabled: true
+
+  # Tecnoempleo — https://www.tecnoempleo.com
+  - name: 'Tecnoempleo — Engineering / Remote'
+    query: 'site:tecnoempleo.com ("Senior Software Engineer" OR "Full Stack" OR "Backend" OR "Frontend" OR "Solutions Architect") (remote OR remoto) (LATAM OR Argentina OR Uruguay)'
+    enabled: true
+
+  # Dice — https://www.dice.com/jobs
+  - name: 'Dice — Engineering / Remote'
+    query: 'site:dice.com/jobs ("Senior Software Engineer" OR "Full Stack" OR "Backend" OR "Frontend" OR "Solutions Architect") (remote OR remoto) (LATAM OR Argentina OR Uruguay)'
+    enabled: true
+
+  # Blind — https://www.teamblind.com
+  - name: 'Blind — Engineering / Remote'
+    query: 'site:teamblind.com ("Senior Software Engineer" OR "Full Stack" OR "Backend" OR "Frontend" OR "Solutions Architect") (remote OR remoto) (LATAM OR Argentina OR Uruguay)'
+    enabled: true
+
+  # InfoJobs — https://www.infojobs.net
+  - name: 'InfoJobs — Engineering / Remote'
+    query: 'site:infojobs.net ("Senior Software Engineer" OR "Full Stack" OR "Backend" OR "Frontend" OR "Solutions Architect") (remote OR remoto) (LATAM OR Argentina OR Uruguay)'
+    enabled: true
+
+  # WeRemoto — https://www.weremoto.com
+  - name: 'WeRemoto — Engineering / Remote'
+    query: 'site:weremoto.com ("Senior Software Engineer" OR "Full Stack" OR "Backend" OR "Frontend" OR "Solutions Architect") (remote OR remoto) (LATAM OR Argentina OR Uruguay)'
+    enabled: true
+
+  # RemoteList — https://remotelist.com
+  - name: 'RemoteList — Engineering / Remote'
+    query: 'site:remotelist.com ("Senior Software Engineer" OR "Full Stack" OR "Backend" OR "Frontend" OR "Solutions Architect") (remote OR remoto) (LATAM OR Argentina OR Uruguay)'
+    enabled: true
+
+  # RemoteJobs.lat — https://remotejobs.lat
+  - name: 'RemoteJobs.lat — Engineering / Remote'
+    query: 'site:remotejobs.lat ("Senior Software Engineer" OR "Full Stack" OR "Backend" OR "Frontend" OR "Solutions Architect") (remote OR remoto) (LATAM OR Argentina OR Uruguay)'
+    enabled: true
+
+  # Talently — landing page not verified
+  - name: 'Talently — Engineering / Remote'
+    query: '"Talently" ("software engineer" OR developer OR "solutions architect") (remote OR LATAM OR Argentina OR Uruguay)'
+    enabled: true
+
+
 # -- Tracked companies --
 # Companies whose career pages are checked directly.
 # scan_method: playwright (default), websearch, greenhouse_api
